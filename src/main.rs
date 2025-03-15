@@ -1,14 +1,5 @@
-mod cli;
-mod commands;
-mod config;
-mod error;
-mod client;
-mod utils;
-
+use polkacli::{run_command, Cli, Result};
 use clap::Parser;
-use cli::Cli;
-use commands::run_command;
-use error::Result;
 
 #[tokio::main]
 async fn main() -> Result<()> {

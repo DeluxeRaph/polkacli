@@ -12,6 +12,8 @@ use subxt_signer::{bip39::Mnemonic, sr25519::Keypair, SecretUri};
 const CONFIG_DIR: &str = ".polkacli";
 const CONFIG_FILE: &str = "config";
 
+// @note so this is looking for a the config files.
+// I assume some where it is creating this files
 fn config_file_path() -> PathBuf {
     home_dir()
         .expect("Unable to find home directory")
