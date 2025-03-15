@@ -1,0 +1,6 @@
+# Ignore Cargo's target directory
+/target/
+
+# Debug and release builds
+/debug/
+release/
