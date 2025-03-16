@@ -6,5 +6,6 @@ pub mod client;
 pub mod utils;
 
 pub use cli::Cli;
+pub use cli::Commands;
 pub use commands::run_command;
 pub use error::Result;
