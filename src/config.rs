@@ -67,6 +67,8 @@ fn update_config(key: &str, value: &str) -> Result<()> {
         let new_line = format!("{} = \"{}\"", key, value);
         config_content.push('\n');
         config_content.push_str(&new_line);
+        write_config_file(&config_content)?;
+    return Ok(())
     }
 
     write_config_file(&new_content.join("\n"))?;
